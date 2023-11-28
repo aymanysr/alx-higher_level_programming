@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 
-print("".join("%c" % i for i in range(97, 123)), end="")
+for number in range(ord('a'), ord('z') + 1):
+    print("{:c}".format(number), end="")
