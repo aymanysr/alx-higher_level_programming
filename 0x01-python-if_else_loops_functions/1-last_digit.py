@@ -10,4 +10,4 @@ if last_int > 5:
 elif last_int < 6 and last_int != 0:
     print(f"Last digit of {number} is {last_int} and is less than 6 and not 0")
 else:
-    print(f"Last digit of {number} is {last_int} and is zero")
+    print(f"Last digit of {number} is {last_int} and is 0")
