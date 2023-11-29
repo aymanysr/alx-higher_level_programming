@@ -1,8 +1,16 @@
 #!/usr/bin/python3
 
-for dig1 in range(10):
-    for dig2 in range(dig1 + 1, 10):
-        if dig1 < 9:
-            print("{:d}{:d}, ".format(dig1, dig2), end="")
+dig1 = 0
+
+while dig1 < 9:
+    dig2 = dig1 + 1
+
+    while dig2 < 10:
+        if dig1 < 8:
+            print("{:d}{:d}, ".format(dig1, dig2), end='')
         else:
             print("{:d}{:d}".format(dig1, dig2))
+
+        dig2 += 1
+
+    dig1 += 1
