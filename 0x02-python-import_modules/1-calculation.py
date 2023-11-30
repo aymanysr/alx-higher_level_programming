@@ -3,7 +3,6 @@
 if __name__ == "__main__":
     """Print add, sub, mul and div of a & b"""
     from calculator_1 import add, sub, mul, div
-
     a = 5
     b = 10
 
