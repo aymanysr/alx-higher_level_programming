@@ -1,8 +1,7 @@
 #!/usr/bin/python3
+if __name__ == "__main__":
+    from add_0 import add
+    a = 1
+    b = 2
 
-a = 1
-b = 2
-exec_string = 'from add_0 import add\nsum = add({}, {})'.format(a, b)
-exec(exec_string)
-
-print("{} + {} = {}".format(a, b, sum))
+print("{} + {} = {}".format(a, b, add(a, b)))
