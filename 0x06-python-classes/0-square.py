@@ -3,5 +3,4 @@ class Square:
     """
     This is a class representing a square.
     """
-    def __init__(self) -> None:
-        pass
+    pass
