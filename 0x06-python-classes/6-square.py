@@ -16,8 +16,8 @@ class Square:
             size (int): The size of the square.
             position (tuple): The position of the square.
         Raises:
-            TypeError: If size is not an int or position is not a tuple of 2 positive ints.
-            ValueError: If size is less than 0 or position contains negative ints.
+            TypeError: If size != int or position != tuple of 2 positve ints
+            ValueError: If size < 0 or position contains negatve ints
         """
         if not isinstance(size, int):
             raise TypeError('size must be an integer')
