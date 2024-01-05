@@ -97,4 +97,5 @@ class Rectangle:
         Args:
             size (int): The width and height of the new Rectangle.
         """
+        size = int(size) if size else 0
         return cls(size, size)
