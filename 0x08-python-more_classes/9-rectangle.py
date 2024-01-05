@@ -96,8 +96,6 @@ class Rectangle:
         """Return a new Rectangle instance with width == height == size.
         Args:
             size (int): The width and height of the new Rectangle.
-        Returns:
-            Rectangle: The new Rectangle instance.
         """
 
         return cls(size, size)
