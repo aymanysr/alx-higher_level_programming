@@ -1,0 +1,18 @@
+The ``1-my_list`` module
+============================
+
+Using ``MyList``
+---------------------
+
+Import function from module:
+    >>> MyList = __import__('1-my_list').MyList
+
+Correct Instance test:
+    >>> ml = MyList()
+    >>> isinstance(ml, list)
+    True
+
+Correct Class Type test:
+    >>> ml = MyList()
+    >>> type(ml) == MyList
+    True
