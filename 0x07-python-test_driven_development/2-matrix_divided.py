@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """module for matrix_divided method"""
 
 def matrix_divided(matrix, div):
