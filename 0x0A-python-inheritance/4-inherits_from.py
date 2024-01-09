@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """module for inherits_from method"""
 
 
