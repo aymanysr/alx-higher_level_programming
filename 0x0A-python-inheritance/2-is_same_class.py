@@ -1,5 +1,5 @@
 #!/use/bin/python3
-"""is_same_class method module"""
+"""module of is_same_class method"""
 
 
 def is_same_class(obj, a_class):
