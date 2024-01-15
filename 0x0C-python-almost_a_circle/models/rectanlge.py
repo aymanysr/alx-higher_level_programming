@@ -71,14 +71,20 @@ class Rectangle(Base):
         """returns the area of the rectangle"""
         return self.__width * self.__height
 
+    def display(self):
+        """prints the rectangle with the character '#'"""
+        for i in range(self.__y):
+            print()
+        for i in range(self.__height):
+            print(" " * self.__x + "#" * self.__width)
+
 
 if __name__ == "__main__":
 
-    r1 = Rectangle(3, 2)
-    print(r1.area())
+    r1 = Rectangle(4, 6)
+    r1.display()
 
-    r2 = Rectangle(2, 10)
-    print(r2.area())
+    print("---")
 
-    r3 = Rectangle(8, 7, 0, 0, 12)
-    print(r3.area())
+    r1 = Rectangle(2, 2)
+    r1.display()
