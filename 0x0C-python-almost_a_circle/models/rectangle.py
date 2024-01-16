@@ -78,6 +78,21 @@ class Rectangle(Base):
         for i in range(self.__height):
             print(" " * self.__x + "#" * self.__width)
 
+    def update(self, *args):
+        """assign the arguments to each attribute"""
+        if args:
+            for i, arg in enumerate(args):
+                if i == 0:
+                    self.id = arg
+                elif i == 1:
+                    self.width = arg
+                elif i == 2:
+                    self.height = arg
+                elif i == 3:
+                    self.x = arg
+                elif i == 4:
+                    self.y = arg
+
     def __str__(self):
         """returns [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
@@ -87,10 +102,20 @@ class Rectangle(Base):
 
 if __name__ == "__main__":
 
-    r1 = Rectangle(2, 3, 2, 2)
-    r1.display()
+    r1 = Rectangle(10, 10, 10, 10)
+    print(r1)
 
-    print("---")
+    r1.update(89)
+    print(r1)
 
-    r2 = Rectangle(3, 2, 1, 0)
-    r2.display()
+    r1.update(89, 2)
+    print(r1)
+
+    r1.update(89, 2, 3)
+    print(r1)
+
+    r1.update(89, 2, 3, 4)
+    print(r1)
+
+    r1.update(89, 2, 3, 4, 5)
+    print(r1)
