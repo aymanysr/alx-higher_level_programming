@@ -7,8 +7,7 @@ if (isNaN(size)) {
   process.exit(1); // Exit the program
 }
 
-let i = 0;
-while (i < size) {
+for (let i = 0; i < size; i++) {
   let line = '';
   let j = 0;
   while (j < size) {
@@ -16,5 +15,4 @@ while (i < size) {
     j++;
   }
   console.log(line);
-  i++;
 }
