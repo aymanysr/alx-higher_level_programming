@@ -1,4 +1,4 @@
-#!usr/bin/node
+#!/usr/bin/node
 
 function factorial (n) {
   // Base case: factorial of 0 or NaN is 1
