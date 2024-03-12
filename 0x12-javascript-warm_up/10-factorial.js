@@ -9,7 +9,8 @@ function factorial (n) {
   return n * factorial(n - 1);
 }
 
-const firstArg = process.argv[2];
-const num = parseInt(firstArg);
+// Retrieve the command-line argument and compute its factorial
+const num = parseInt(process.argv[2]);
+const result = factorial(num);
 
-console.log(factorial(num));
+console.log(result);
