@@ -13,7 +13,7 @@ if __name__ == "__main__":
         # Create a cursor object
         cur = db.cursor()
 
-        # SQL query to retrieve states
+        # SQL query to retrieve cities ordered by cities.id
         sql_query = "SELECT cities.id, cities.name, states.name FROM cities " \
                     "JOIN states ON cities.state_id = states.id " \
                     "ORDER BY cities.id ASC"
