@@ -34,8 +34,8 @@ if __name__ == "__main__":
         if rows:
             print(', '.join(row[0] for row in rows))
         else:
-            print("No cities found for the state '{}'".format(sys.argv[4]))
-
+            print()
+            
     except MySQLdb.Error as e:
         print("MySQL Error {}: {}".format(e.args[0], e.args[1]))
         sys.exit(1)
