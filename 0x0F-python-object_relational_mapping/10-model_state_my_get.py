@@ -21,7 +21,7 @@ if __name__ == "__main__":
     session = Session()
 
     # Query the database; retrieve the specific 'State' objects
-    states = session.query(State).order_by(State.id)
+    states = session.query(State)
 
     # check if state is the one that has been written
     found = False
@@ -31,7 +31,7 @@ if __name__ == "__main__":
             found = True
             break
 
-    if not found:
+    if found is False:
         print("Nothing")
 
     # Close the instance of Session
