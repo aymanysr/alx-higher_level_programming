@@ -28,7 +28,7 @@ if __name__ == "__main__":
         if states is not None:
             print("{}".format(states.id))
         else:
-            print("Nothing")
+            print("Not found")
 
     except Exception as e:
         print("Error", e)
