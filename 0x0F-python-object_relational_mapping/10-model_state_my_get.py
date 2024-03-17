@@ -20,19 +20,19 @@ if __name__ == "__main__":
     # Create a new instance of Session
     session = Session()
 
-    # Query the database; retrieve the specific 'State' objects
-    states = session.query(State)
+    try:
+        # Query the database; retrieve the specific 'State' objects
+        states = session.query(State).filter(State.name == sys.argv[4]).first()
 
-    # check if state is the one that has been written
-    found = False
-    for state in states:
-        if state.name == sys.argv[4]:
-            print("{}".format(state.id))
-            found = True
-            break
+        # check if state is found
+        if states is not None:
+            print("{}".format(states.id))
+        else:
+            print("Nothing")
 
-    if found is False:
-        print("Nothing")
+    except Exception as e:
+        print("Error", e)
 
-    # Close the instance of Session
-    session.close()
+    finally:
+        # Close the instance of Session
+        session.close()
